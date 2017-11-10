@@ -11,6 +11,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    // mass assignment
     protected $fillable = [
         'name', 'email', 'password', 'role_id', 'photo_id', 'is_active',
     ];
@@ -30,6 +32,13 @@ class User extends Authenticatable
 
         return $this->belongsTo('App\Role');
 
+    }
+
+
+    // Relationship to photo
+    public function photo(){
+
+        return $this->belongsTo('App\Photo');
 
     }
 
