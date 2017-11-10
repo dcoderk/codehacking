@@ -19,7 +19,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-// Admin dashboard
+
 Route::get('/admin', function(){
 
 	return view('admin.index');
@@ -27,6 +27,5 @@ Route::get('/admin', function(){
 });
 
 
-// Admin Users section
 Route::resource('admin/users', 'AdminUsersController');
 
