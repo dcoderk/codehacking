@@ -8,6 +8,21 @@ class Photo extends Model
 {
     
 	// mass assignemnt
+
+	protected $uploads = '/images/'; 
+
+
 	protected $fillable = ['file'];
+
+
+
+	//relationship   //accessor function
+	public function getFileAttribute($photo){
+
+
+		return $this->uploads . $photo;
+
+	}
+
 
 }
