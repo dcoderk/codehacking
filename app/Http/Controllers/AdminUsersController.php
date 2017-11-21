@@ -186,7 +186,11 @@ class AdminUsersController extends Controller
     public function destroy($id)
     {
         
-        User::findOrfail($id)->delete();
+        $user = User::findOrfail($id);
+
+        unlink(public_path() . $user->photo->file);
+
+        $user->delete();
 
 
         //Static object session
