@@ -10,6 +10,7 @@ use App\Role;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
 
 class AdminUsersController extends Controller
 {
@@ -133,6 +134,8 @@ class AdminUsersController extends Controller
         
         $user = User::findOrfail($id);
 
+        $input = $request->all();
+
         
         if (trim($request->password) == '') {
         
@@ -168,7 +171,10 @@ class AdminUsersController extends Controller
        // return $request->all();          
        // return view('admin.users.update');
 
+
     }
+
+
 
     /**
      * Remove the specified resource from storage.

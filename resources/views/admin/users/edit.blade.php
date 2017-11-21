@@ -52,7 +52,7 @@
 					
 		
 				<div class="form-group">
-				{!! Form::submit('Create User', ['class'=>'btn btn-primary']) !!}
+				{!! Form::submit('Update User', ['class'=>'btn btn-primary']) !!}
 				</div>
 			
 		
