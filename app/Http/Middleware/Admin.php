@@ -28,6 +28,7 @@ class Admin
 
         }
 
+        //not login go back home
         return redirect('/');
 
         
