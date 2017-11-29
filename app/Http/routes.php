@@ -29,6 +29,7 @@ Route::get('/admin', function(){
 
 Route::group(['middleware'=>'admin'], function(){
 
+	// function to redirect administrator role to admin page 
 	Route::get('/admin', function(){
 
 		return view('admin.index');
@@ -37,6 +38,8 @@ Route::group(['middleware'=>'admin'], function(){
 
 
 	Route::resource('admin/users', 'AdminUsersController');
+
+	Route::resource('admin/posts', 'AdminPostsController');
 	
 
 });
