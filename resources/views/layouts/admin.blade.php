@@ -16,6 +16,9 @@
 
     <link href="{{asset('css/libs.css')}}" rel="stylesheet">
 
+    <!-- add dropzone styles here -->
+    @yield('styles')
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -145,6 +148,10 @@
                                 <a href="{{route('admin.posts.create')}}">Create Post</a>
                             </li>
 
+                            <li>
+                                <a href="{{route('admin.comments.index')}}">All Comments</a>
+                            </li>
+
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
@@ -170,20 +177,16 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Media<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/media">All Media</a>
+                                <a href="{{route('admin.media.index')}}">All Media</a>
                             </li>
 
                             <li>
-                                <a href="">Upload Media</a>
+                                <a href="{{route('admin.media.create')}}">Upload Media</a>
                             </li>
 
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
-
-
-
-
 
 
 
@@ -349,8 +352,8 @@
 <!-- jQuery -->
 <script src="{{asset('js/libs.js')}}"></script>
 
-
-@yield('footer')
+<!-- yield here the scripts js from dropzone -->
+@yield('scripts')
 
 
 

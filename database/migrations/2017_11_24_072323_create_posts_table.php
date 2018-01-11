@@ -21,7 +21,7 @@ class CreatePostsTable extends Migration
             $table->text('body');
             $table->timestamps();
 
-            // deleting users with relations
+            // deleting users with relations  or constrain
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }

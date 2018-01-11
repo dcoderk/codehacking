@@ -7,7 +7,8 @@
 
 	<h1>Create Post</h1>
 
-
+	<div class="row">
+		
 		{!! Form::open(['method'=>'POST','action'=>'AdminPostsController@store','files'=>true]) !!}
 	
 			<div class="form-group">	
@@ -38,9 +39,14 @@
 		
 	
 		{!! Form::close() !!}	
-	
+	</div>
+
+	<div class="row">
+		
+		@include('includes.form_error')
+
+	</div>
 	 
-	@include('includes.form_error')
 		
 
 @endsection
