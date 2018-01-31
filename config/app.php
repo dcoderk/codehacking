@@ -147,9 +147,11 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        /*collective html service provider*/
         Collective\Html\HtmlServiceProvider::class,
-        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
-
+        /*sluggable service provider*/
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
+       
 
         /*
          * Application Service Providers...
@@ -158,6 +160,9 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        /*Laravel file manager class*/
+        Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
     ],
 
@@ -206,6 +211,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        /*laravel file manager alias*/
+        'Image' => Intervention\Image\Facades\Image::class,
+
+
     
 
     ],
