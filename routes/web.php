@@ -22,6 +22,8 @@ Route::get('/', function () {
 });
 
 
+
+
 // admin access
 Route::group(['middleware'=>'admin'], function(){
 
@@ -38,19 +40,19 @@ Route::group(['middleware'=>'admin'], function(){
         'index' => 'admin.users.index',
         'create' => 'admin.users.create',
         'store' => 'admin.users.store',
-        'edit' => 'admin.users.edit',
+        'edit' => 'admin.users.edit'
     
         ]]);
 
+    
     Route::get('/post/{id}', ['as'=>'home.post', 'uses'=>'AdminPostsController@post']);
-
 
     Route::resource('admin/posts', 'AdminPostsController', ['names'=> [
 
         'index' => 'admin.posts.index',
         'create' => 'admin.posts.create',
         'store' => 'admin.posts.store',
-        'edit' => 'admin.posts.edit',
+        'edit' => 'admin.posts.edit'
 
         ]]);
 
@@ -59,7 +61,7 @@ Route::group(['middleware'=>'admin'], function(){
         'index' => 'admin.categories.index',
         'create' => 'admin.categories.create',
         'store' => 'admin.categories.store',
-        'edit' => 'admin.categories.edit',
+        'edit' => 'admin.categories.edit'
 
 
         ]]);
@@ -69,7 +71,7 @@ Route::group(['middleware'=>'admin'], function(){
         'index' => 'admin.media.index',
         'create' => 'admin.media.create',
         'store' => 'admin.media.store',
-        'edit' => 'admin.media.edit',
+        'edit' => 'admin.media.edit'
 
         ]]);
 
@@ -82,7 +84,7 @@ Route::group(['middleware'=>'admin'], function(){
         'create' => 'admin.comments.create',
         'store' => 'admin.comments.store',
         'edit' => 'admin.comments.edit',
-        'show' => 'admin.comments.show',
+        'show' => 'admin.comments.show'
 
         ]]);
 
@@ -91,8 +93,7 @@ Route::group(['middleware'=>'admin'], function(){
         'index' => 'admin.replies.index',
         'create' => 'admin.replies.create',
         'store' => 'admin.replies.store',
-        'edit' => 'admin.replies.edit',
-        'show' => 'admin.replies.show',
+        'edit' => 'admin.replies.edit'
 
         ]]);
 
