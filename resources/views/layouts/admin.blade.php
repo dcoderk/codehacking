@@ -12,9 +12,9 @@
     <title>Admin</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
-
     <link href="{{asset('css/libs.css')}}" rel="stylesheet">
+    
+    <link href="{{asset('css/app.css')}}" rel="stylesheet">
 
     <!-- add dropzone styles here -->
     @yield('styles')

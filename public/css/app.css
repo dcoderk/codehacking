@@ -1,13 +1,21 @@
 #admin-page {
-  padding: 0; }
+  padding: 0;
+}
 
 .nested-comment.media {
-  margin-top: 50px; }
+  margin-top: 50px;
+}
 
 .comment-reply {
-  display: none; }
+  display: none;
+}
 
 .toggle-reply.btn.btn-primary.pull-right.btn-reply {
-  margin: 5px 0; }
+  margin: 5px 0;
+}
 
-/*# sourceMappingURL=app.css.map */
+h1 {
+  color: #42429e;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiL29wdC9sYW1wcC9odGRvY3MvbGFyYXZlbC9jb2RlaGFja2luZy9yZXNvdXJjZXMvYXNzZXRzL3Nhc3MvYXBwLnNjc3MiLCJzb3VyY2VzIjpbIi9vcHQvbGFtcHAvaHRkb2NzL2xhcmF2ZWwvY29kZWhhY2tpbmcvcmVzb3VyY2VzL2Fzc2V0cy9zYXNzL2FwcC5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIEBpbXBvcnQgXCJub2RlX21vZHVsZXMvYm9vdHN0cmFwLXNhc3MvYXNzZXRzL3N0eWxlc2hlZXRzL2Jvb3RzdHJhcFwiO1xuXG5cbiNhZG1pbi1wYWdlIHtwYWRkaW5nOiAwO31cblxuLm5lc3RlZC1jb21tZW50Lm1lZGlhIHttYXJnaW4tdG9wOiA1MHB4O31cblxuLmNvbW1lbnQtcmVwbHkge2Rpc3BsYXk6bm9uZTt9XG5cbi50b2dnbGUtcmVwbHkuYnRuLmJ0bi1wcmltYXJ5LnB1bGwtcmlnaHQuYnRuLXJlcGx5IHttYXJnaW46IDVweCAwO31cblxuaDEge2NvbG9yOiAjNDI0MjllO30iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0EsQUFBQSxXQUFXLENBQUM7RUFBQyxPQUFPLEVBQUUsQ0FBQztDQUFJOztBQUUzQixBQUFBLGVBQWUsQUFBQSxNQUFNLENBQUM7RUFBQyxVQUFVLEVBQUUsSUFBSTtDQUFJOztBQUUzQyxBQUFBLGNBQWMsQ0FBQztFQUFDLE9BQU8sRUFBQyxJQUFJO0NBQUk7O0FBRWhDLEFBQUEsYUFBYSxBQUFBLElBQUksQUFBQSxZQUFZLEFBQUEsV0FBVyxBQUFBLFVBQVUsQ0FBQztFQUFDLE1BQU0sRUFBRSxLQUFLO0NBQUk7O0FBRXJFLEFBQUEsRUFBRSxDQUFDO0VBQUMsS0FBSyxFQUFFLE9BQU87Q0FBSSJ9 */
